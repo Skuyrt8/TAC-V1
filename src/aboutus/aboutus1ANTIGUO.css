@@ -1,0 +1,105 @@
+/* Variables para colores */
+:root {
+    --color-bg: #111;
+    --color-hover: rgb(182, 191, 82);
+    --color-white: #fff;
+    --color-border: #333;
+}
+
+/* Reset general */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, header {
+    margin: 0;
+    padding: 0;
+    font-family: "barlow";
+}
+
+body {
+    margin-top: 60px; /* Deja espacio para el nav fijo */
+}
+
+main {
+    margin: 0 auto;
+    background-color: #111; /* Asegura que el main tenga el color de fondo correcto */
+}
+
+/* The team */
+
+.support__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    padding: 0 1rem;
+}
+
+.support__item {
+    color: white;
+    /* Reducimos el margen inferior aquí si estamos usando separadores para un mejor control */
+    margin-bottom: 20px; /* Ajusta este valor para el espacio entre el texto y el separador */
+}
+
+.support__logo {
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 100px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.support__logo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.support__content {
+    font-size: 2em;
+    max-width: 1000px;
+    margin: auto; /* Mantiene el contenido centrado horizontalmente */
+    white-space: pre-wrap;
+    padding: 0 1rem;
+    /* Elimina el margen inferior si ya ajustaste support__item o controlas el espacio con el hr */
+    margin-bottom: 0; /* Esto asegura que el HR controle el espacio debajo del contenido */
+}
+
+/* Estilos para los separadores horizontales */
+.support-separator {
+    width: 30%; /* Ajusta el ancho de la línea */
+    max-width: 800px; /* Para que no sea excesivamente larga en pantallas grandes */
+    border: none; /* Quita el borde por defecto del <hr> */
+    border-top: 1px solid var(--color-hover); /* Una línea sólida sutil con tu color de hover */
+    margin: 20px auto; /* Espacio superior e inferior para el separador, y centrado */
+    opacity: 0.7; /* Hazla un poco transparente si quieres */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .support__container {
+        padding: 20px 0;
+    }
+
+    .support__logo img {
+        max-width: 85%;
+    }
+
+    .support__content {
+        font-size: 1.4rem; /* Más pequeño para móviles */
+        line-height: 1.6; /* Mejor espaciado entre líneas */
+        text-align: justify; /* Justifica para facilitar la lectura */
+        max-width: 85%;
+    }
+
+    .support-separator {
+        width: 80%; /* Ajusta el ancho para móviles */
+        margin: 15px auto; /* Ajusta el margen para móviles */
+    }
+}

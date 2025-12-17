@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="../image/png" href="../icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav__logo-container">
+                    <a href="../index.html" title="TAC Zona Paddock">
+                        <img src="../TAC-Mini 300X50.png" class="nav__logo" alt="TAC Zona Paddock">
+                    </a>
+                </div>
+
+                <button class="nav__toggle" aria-label="Open menu">☰</button>
+
+                <div class="nav__ul-container">
+                    <ul class="nav__ul">
+                        <li class="nav__item"><a href="../tours/tours.html" class="nav__link nav__link.active">TOURS</a></li>
+                        <li class="nav__item"><a href="../rental bikes/rental.html" class="nav__link nav__link.active">MOTORCYCLE RENTAL</a></li>
+                        <li class="nav__item"><a href="../aboutus/aboutus.html" class="nav__link nav__link.active">ABOUT US</a></li>
+                        <li class="nav__item"><a href="../contact us/contactus.html" class="nav__link nav__link.active active">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="banner__content">
+                <h1 class="banner__title">ANY QUESTIONS?</h1>
+                <h2 class="banner__subtitle">ASK US ANYTHING</h2>
+            </div>
+            <div class="carousel">
+                <div class="carousel__item">
+                    <img src="../images/tac-banner1.png" alt="TAC Image">
+                </div>
+            </div>
+        </div>
+        <div class="formulario__box">
+            <div class="contact__info contact__item">
+                <ul class="ul__contact">EMAIL
+                    <li><span class="material-symbols-outlined">mail</span><a href="mailto:javibezama@zonapaddock.com">javibezana@zonapaddock.com</a></li>
+                    <li><span class="material-symbols-outlined">mail</span><a class="email__none" href="mailto:javibezama@zonapaddock.com">javibezana@zonapaddock.com</a></li>
+                </ul>
+                <ul class="ul__contact">PHONE
+                    <li>
+                        <span class="material-symbols-outlined">call</span> 
+                        <a href="tel:+34628292936">+34 628292936</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">call</span> 
+                        <a href="tel:+34628292936">+34 628292936</a>
+                    </li>
+                </ul>
+                <ul class="ul__contact">OPENING HOURS
+                    <li><span class="material-symbols-outlined">schedule</span> MONDAY TO FRIDAY 9AM - 7PM
+                    SATURDAY 9AM - 3PM</li>
+                </ul>
+            </div>
+            <form class="form__container contact__item" action="https://formsubmit.co/9e503db2d9279fb87d3341c1f33240de " method="POST">
+                <fieldset> 
+                    <legend>BASIC INFORMATION</legend>
+                    <input name="First Name" type="text" placeholder="First Name">
+                    <input name="Last Name" type="text" placeholder="Last Name">
+                    <textarea name="Message" rows="5" placeholder="Write your message..." required></textarea>
+                </fieldset>
+                <fieldset> 
+                    <legend>CONTACT INFORMATION</legend>
+                    <input name="Email" type="email" placeholder="Email">
+                    <input name="Phone Number" type="text" placeholder="Phone Number">
+                </fieldset>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Logo -->
+            <div class="footer_columns">
+                <div class="footer__logo">
+                    <a class="footer__img1" href="../index.html" title="TAC Zona Paddock"> <!-- Ruta corregida -->
+                        <img src="../TAC-BIG.png" class="footer__img" alt="TAC Zona Paddock"> <!-- Ruta corregida -->
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Enlaces -->
+            <div class="footer__links">
+                <div class="footer__columns">
+                    <div class="footer__info">
+                        <h6>SUPPORT</h6>
+                        <a href="../contact us/contactus.html">CONTACT</a>
+                        <a href="#">TERMS OF SERVICE</a>
+                        <a href="#">PRIVACY POLICY</a>
+                        <a href="../faq/faq.html">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer__columns">
+                    <div class="footer__info">
+                        <h6>GENERAL</h6>
+                        <a href="../aboutus/aboutus.html">ABOUT US</a>
+                        <a href="#">EVENTS</a>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Contacto -->
+            <div class="footer_columns">
+                <div class="footer__info">
+                    <h6>GIVE US A SHOUT!!</h6>
+                    <p>PHONE/EMAIL</p>
+                    <p>ENGLISH & SPANISH</p>
+                    <p><a href="tel:+34628292936">📞 +34 628292936</a></p>
+                    <p><a href="mailto:javibezama@zonapaddock.com">javibezama@zonapaddock.com</a></p>
+                    <p>SCHEDULE:</p><p>LUN-VIE &nbsp; 9AM-7PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="../faq/faq.html" class="help-button" title="¿Necesitas ayuda? Contáctanos">
+        KNOW MORE
+    </a>
+    <script>
+        const toggle = document.querySelector('.nav__toggle');
+        const menu = document.querySelector('.nav__ul-container');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script> 
+</body>
+</html>
