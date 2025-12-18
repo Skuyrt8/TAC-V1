@@ -85,7 +85,7 @@ main {
     padding: 0; /* Eliminamos el padding que ya no es necesario con width/height */
     
     text-decoration: none;
-    z-index: 9998;
+    z-index: 9990;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -93,6 +93,7 @@ main {
 .sn-button i {
     font-size: 1.5rem; /* Hace el icono más grande y visible */
     line-height: 1; /* Ayuda a asegurar el centrado perfecto */
+    color: rgb(255, 255, 255);
 }
 
 .sn-button:hover {
